@@ -1,0 +1,4 @@
+# DEFAULT ENVIRONMENT VARIABLES
+${ENV_APP}               preprod
+${ENV_ONBOARDING}        ${ENV_APP}
+${ENV_ONBOARDING_API}    ${ENV_APP}
