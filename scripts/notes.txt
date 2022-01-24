@@ -1,0 +1,10 @@
+to check python version: python -V
+
+Install robot framework:
+- pip install robotframework
+- pip install robotframework-seleniumlibrary
+- pip install robotframework-pabot
+- pip installl robot-faker
+- pip install robotframework-jsonlibrary
+- pip install robotframework-csvLib
+to check robot version : robot --version
