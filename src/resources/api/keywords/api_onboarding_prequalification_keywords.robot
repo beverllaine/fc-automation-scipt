@@ -28,7 +28,7 @@ New Record With Prequaification "Step-1" Details Should Be Saved
 #======================
 #    INTERNAL KEYWORDS
 #======================
-Generate Onboarding Prequalification TestData
+Generate Onboarding Prequalification Test Data
     ${ob_first_name}  ${ob_last_name}  ${ob_mobile_number}  ${ob_company}  ${ob_email} =    Get Signup Test Data
     set global variable    ${g_OB_FIRST_NAME}    ${ob_first_name}
     set global variable    ${g_OB_LAST_NAME}    ${ob_last_name}

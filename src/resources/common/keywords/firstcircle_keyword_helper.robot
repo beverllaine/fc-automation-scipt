@@ -5,6 +5,14 @@ Resource    ${COMMON_FIRSTCIRCLE_KEYWORD_HELPER_FILEPATH}
 
 ** Keywords ***
 # COMMON
+Generate Datetime For Unique Test Data
+    ${date} =    Get Current Date
+    ${date} =    convert date   ${date}    epoch
+    ${date} =    convert to string    ${date}
+    ${date} =    remove string    ${date}    .
+    [Return]    ${date}
+
+    
 Get Signup Test Data
     ${first_name} =    FakerLibrary.First Name
     ${last_name} =     FakerLibrary.Last Name
@@ -15,9 +23,3 @@ Get Signup Test Data
     ${date_timestamp}    Generate Datetime For Unique Test Data
     [Return]    ${first_name}    ${last_name}    ${random_number}    ${mobile_number}    ${company}    ${email}
 
-Generate Datetime For Unique Test Data
-    ${date} =    Get Current Date
-    ${date} =    convert date   ${date}    epoch
-    ${date} =    convert to string    ${date}
-    ${date} =    remove string    ${date}    .
-    [Return]    ${date}
