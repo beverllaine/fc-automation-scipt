@@ -8,6 +8,7 @@ Resources    ${COMMON_API_KEYWORD_HELPER_FILEPATH}
 #    WHEN
 #===============
 Customer Fills Out Prequalification "Step-1" Form With Valid Data
+    ${json_file} =    load json from
 
 #===============
 #    THEN
