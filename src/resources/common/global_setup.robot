@@ -2,13 +2,13 @@
 Library    SeleniumLibrary    timeout=60s
 Library    String
 Library    Process
-Library    Datetime
+#Library    Datetime
 Library    FakerLibrary
 Library    JSONLibrary
 Library    Collections
 Library    OperatingSystem
-Library    REST    https://${ENV_APP}.app.firstcircle.ph
-Resource    ${GLOBAL_FILE_PATH}
+#Library    REST    https://${ENV_APP}.app.firstcircle.ph
+Resource    common/resources/global_file_path.robot
 Resource    ${COMMON_API_KEYWORD_HELPER_FILEPATH}
 Resource    ${COMMON_FIRSTCIRCLE_KEYWORD_HELPER_FILEPATH}
 Resource    ${FIRSTCIRCLE_URL_EXTENSIONS}
